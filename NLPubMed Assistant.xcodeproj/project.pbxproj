@@ -1,0 +1,779 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CBAC58CA2BD11FD900F34AAE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAC58C92BD11FD900F34AAE /* Constants.swift */; };
+		CBAC58CC2BD1212C00F34AAE /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAC58CB2BD1212C00F34AAE /* SearchController.swift */; };
+		CBAC58D02BD1270500F34AAE /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = CBAC58CF2BD1270500F34AAE /* FirebaseAnalytics */; };
+		CBAC58D22BD1270500F34AAE /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = CBAC58D12BD1270500F34AAE /* FirebaseAnalyticsOnDeviceConversion */; };
+		CBAC58D62BD1292B00F34AAE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CBAC58D52BD1292B00F34AAE /* GoogleService-Info.plist */; };
+		CBAC58D72BD1295500F34AAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBCCCFA82BD016FF008BE3FA /* Main.storyboard */; };
+		CBAC58D92BD12AC500F34AAE /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = CBAC58D82BD12AC500F34AAE /* FirebaseFirestore */; };
+		CBAC58DB2BD12AFB00F34AAE /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = CBAC58DA2BD12AFB00F34AAE /* FirebaseFirestore */; };
+		CBAC58DD2BD12AFB00F34AAE /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = CBAC58DC2BD12AFB00F34AAE /* FirebaseFirestoreCombine-Community */; };
+		CBAC58DF2BD12AFB00F34AAE /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CBAC58DE2BD12AFB00F34AAE /* FirebaseFirestoreSwift */; };
+		CBAC58E12BD133DA00F34AAE /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAC58E02BD133DA00F34AAE /* Utils.swift */; };
+		CBAC58E62BD15F0D00F34AAE /* ArticlesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAC58E52BD15F0D00F34AAE /* ArticlesManager.swift */; };
+		CBAC58E82BD1601300F34AAE /* ArticlesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAC58E72BD1601300F34AAE /* ArticlesModel.swift */; };
+		CBAC58EA2BD160B300F34AAE /* ArticlesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAC58E92BD160B300F34AAE /* ArticlesData.swift */; };
+		CBAC58EC2BD19CF200F34AAE /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAC58EB2BD19CF200F34AAE /* WebViewController.swift */; };
+		CBBFC37B2BD031A800405DAE /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBFC37A2BD031A800405DAE /* RegisterController.swift */; };
+		CBBFC37D2BD0506700405DAE /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBFC37C2BD0506700405DAE /* LoginController.swift */; };
+		CBCCCFA32BD016FF008BE3FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCCCFA22BD016FF008BE3FA /* AppDelegate.swift */; };
+		CBCCCFA52BD016FF008BE3FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCCCFA42BD016FF008BE3FA /* SceneDelegate.swift */; };
+		CBCCCFA72BD016FF008BE3FA /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCCCFA62BD016FF008BE3FA /* MainController.swift */; };
+		CBCCCFAD2BD016FF008BE3FA /* NLPubMed_Assistant.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CBCCCFAB2BD016FF008BE3FA /* NLPubMed_Assistant.xcdatamodeld */; };
+		CBCCCFBD2BD01700008BE3FA /* NLPubMed_AssistantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCCCFBC2BD01700008BE3FA /* NLPubMed_AssistantTests.swift */; };
+		CBCCCFC72BD01701008BE3FA /* NLPubMed_AssistantUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCCCFC62BD01701008BE3FA /* NLPubMed_AssistantUITests.swift */; };
+		CBCCCFC92BD01701008BE3FA /* NLPubMed_AssistantUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCCCFC82BD01701008BE3FA /* NLPubMed_AssistantUITestsLaunchTests.swift */; };
+		CBCCCFDB2BD01DC9008BE3FA /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = CBCCCFDA2BD01DC9008BE3FA /* FirebaseAnalytics */; };
+		CBCCCFDD2BD01DC9008BE3FA /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = CBCCCFDC2BD01DC9008BE3FA /* FirebaseAuth */; };
+		CBCCCFDF2BD01DC9008BE3FA /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = CBCCCFDE2BD01DC9008BE3FA /* FirebaseAuthCombine-Community */; };
+		CBF7B0C62BE9752E00F03C7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBCCCFAE2BD01700008BE3FA /* Assets.xcassets */; };
+		CBF7B0C72BE9752F00F03C7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBCCCFAE2BD01700008BE3FA /* Assets.xcassets */; };
+		CBF7B0C82BE9753000F03C7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBCCCFAE2BD01700008BE3FA /* Assets.xcassets */; };
+		CBF7B0CA2BE980AA00F03C7C /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF7B0C92BE980AA00F03C7C /* ArticleTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CBCCCFB92BD01700008BE3FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBCCCF972BD016FF008BE3FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBCCCF9E2BD016FF008BE3FA;
+			remoteInfo = "NLPubMed Assistant";
+		};
+		CBCCCFC32BD01701008BE3FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBCCCF972BD016FF008BE3FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBCCCF9E2BD016FF008BE3FA;
+			remoteInfo = "NLPubMed Assistant";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CBAC58C92BD11FD900F34AAE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CBAC58CB2BD1212C00F34AAE /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
+		CBAC58CD2BD1268F00F34AAE /* NLPubMed Assistant */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "NLPubMed Assistant"; sourceTree = "<group>"; };
+		CBAC58D52BD1292B00F34AAE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CBAC58E02BD133DA00F34AAE /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		CBAC58E52BD15F0D00F34AAE /* ArticlesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesManager.swift; sourceTree = "<group>"; };
+		CBAC58E72BD1601300F34AAE /* ArticlesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesModel.swift; sourceTree = "<group>"; };
+		CBAC58E92BD160B300F34AAE /* ArticlesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesData.swift; sourceTree = "<group>"; };
+		CBAC58EB2BD19CF200F34AAE /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		CBBFC37A2BD031A800405DAE /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
+		CBBFC37C2BD0506700405DAE /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		CBCCCF9F2BD016FF008BE3FA /* NLPubMed Assistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NLPubMed Assistant.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBCCCFA22BD016FF008BE3FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CBCCCFA42BD016FF008BE3FA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CBCCCFA62BD016FF008BE3FA /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		CBCCCFA92BD016FF008BE3FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CBCCCFAC2BD016FF008BE3FA /* NLPubMed_Assistant.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NLPubMed_Assistant.xcdatamodel; sourceTree = "<group>"; };
+		CBCCCFAE2BD01700008BE3FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CBCCCFB12BD01700008BE3FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CBCCCFB32BD01700008BE3FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBCCCFB82BD01700008BE3FA /* NLPubMed AssistantTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NLPubMed AssistantTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBCCCFBC2BD01700008BE3FA /* NLPubMed_AssistantTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NLPubMed_AssistantTests.swift; sourceTree = "<group>"; };
+		CBCCCFC22BD01701008BE3FA /* NLPubMed AssistantUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NLPubMed AssistantUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBCCCFC62BD01701008BE3FA /* NLPubMed_AssistantUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NLPubMed_AssistantUITests.swift; sourceTree = "<group>"; };
+		CBCCCFC82BD01701008BE3FA /* NLPubMed_AssistantUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NLPubMed_AssistantUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CBF7B0C92BE980AA00F03C7C /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CBCCCF9C2BD016FF008BE3FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBCCCFDB2BD01DC9008BE3FA /* FirebaseAnalytics in Frameworks */,
+				CBAC58DD2BD12AFB00F34AAE /* FirebaseFirestoreCombine-Community in Frameworks */,
+				CBCCCFDF2BD01DC9008BE3FA /* FirebaseAuthCombine-Community in Frameworks */,
+				CBAC58D22BD1270500F34AAE /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
+				CBAC58D02BD1270500F34AAE /* FirebaseAnalytics in Frameworks */,
+				CBCCCFDD2BD01DC9008BE3FA /* FirebaseAuth in Frameworks */,
+				CBAC58D92BD12AC500F34AAE /* FirebaseFirestore in Frameworks */,
+				CBAC58DB2BD12AFB00F34AAE /* FirebaseFirestore in Frameworks */,
+				CBAC58DF2BD12AFB00F34AAE /* FirebaseFirestoreSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBCCCFB52BD01700008BE3FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBCCCFBF2BD01701008BE3FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CBAC58C82BD11CE200F34AAE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CBCCCFA82BD016FF008BE3FA /* Main.storyboard */,
+				CBF7B0C92BE980AA00F03C7C /* ArticleTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CBAC58E22BD15DD200F34AAE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CBAC58E52BD15F0D00F34AAE /* ArticlesManager.swift */,
+				CBAC58E72BD1601300F34AAE /* ArticlesModel.swift */,
+				CBAC58E92BD160B300F34AAE /* ArticlesData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CBBFC37F2BD0508500405DAE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CBCCCFA62BD016FF008BE3FA /* MainController.swift */,
+				CBBFC37A2BD031A800405DAE /* RegisterController.swift */,
+				CBBFC37C2BD0506700405DAE /* LoginController.swift */,
+				CBAC58CB2BD1212C00F34AAE /* SearchController.swift */,
+				CBAC58EB2BD19CF200F34AAE /* WebViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CBCCCF962BD016FF008BE3FA = {
+			isa = PBXGroup;
+			children = (
+				CBAC58C92BD11FD900F34AAE /* Constants.swift */,
+				CBCCCFA12BD016FF008BE3FA /* NLPubMed Assistant */,
+				CBCCCFBB2BD01700008BE3FA /* NLPubMed AssistantTests */,
+				CBCCCFC52BD01701008BE3FA /* NLPubMed AssistantUITests */,
+				CBCCCFA02BD016FF008BE3FA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CBCCCFA02BD016FF008BE3FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CBCCCF9F2BD016FF008BE3FA /* NLPubMed Assistant.app */,
+				CBCCCFB82BD01700008BE3FA /* NLPubMed AssistantTests.xctest */,
+				CBCCCFC22BD01701008BE3FA /* NLPubMed AssistantUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CBCCCFA12BD016FF008BE3FA /* NLPubMed Assistant */ = {
+			isa = PBXGroup;
+			children = (
+				CBAC58D52BD1292B00F34AAE /* GoogleService-Info.plist */,
+				CBAC58CD2BD1268F00F34AAE /* NLPubMed Assistant */,
+				CBCCCFA22BD016FF008BE3FA /* AppDelegate.swift */,
+				CBCCCFA42BD016FF008BE3FA /* SceneDelegate.swift */,
+				CBAC58E22BD15DD200F34AAE /* Model */,
+				CBAC58C82BD11CE200F34AAE /* Views */,
+				CBBFC37F2BD0508500405DAE /* Controllers */,
+				CBCCCFAE2BD01700008BE3FA /* Assets.xcassets */,
+				CBCCCFB02BD01700008BE3FA /* LaunchScreen.storyboard */,
+				CBCCCFB32BD01700008BE3FA /* Info.plist */,
+				CBCCCFAB2BD016FF008BE3FA /* NLPubMed_Assistant.xcdatamodeld */,
+				CBAC58E02BD133DA00F34AAE /* Utils.swift */,
+			);
+			path = "NLPubMed Assistant";
+			sourceTree = "<group>";
+		};
+		CBCCCFBB2BD01700008BE3FA /* NLPubMed AssistantTests */ = {
+			isa = PBXGroup;
+			children = (
+				CBCCCFBC2BD01700008BE3FA /* NLPubMed_AssistantTests.swift */,
+			);
+			path = "NLPubMed AssistantTests";
+			sourceTree = "<group>";
+		};
+		CBCCCFC52BD01701008BE3FA /* NLPubMed AssistantUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CBCCCFC62BD01701008BE3FA /* NLPubMed_AssistantUITests.swift */,
+				CBCCCFC82BD01701008BE3FA /* NLPubMed_AssistantUITestsLaunchTests.swift */,
+			);
+			path = "NLPubMed AssistantUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CBCCCF9E2BD016FF008BE3FA /* NLPubMed Assistant */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBCCCFCC2BD01701008BE3FA /* Build configuration list for PBXNativeTarget "NLPubMed Assistant" */;
+			buildPhases = (
+				CBCCCF9B2BD016FF008BE3FA /* Sources */,
+				CBCCCF9C2BD016FF008BE3FA /* Frameworks */,
+				CBCCCF9D2BD016FF008BE3FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NLPubMed Assistant";
+			packageProductDependencies = (
+				CBCCCFDA2BD01DC9008BE3FA /* FirebaseAnalytics */,
+				CBCCCFDC2BD01DC9008BE3FA /* FirebaseAuth */,
+				CBCCCFDE2BD01DC9008BE3FA /* FirebaseAuthCombine-Community */,
+				CBAC58CF2BD1270500F34AAE /* FirebaseAnalytics */,
+				CBAC58D12BD1270500F34AAE /* FirebaseAnalyticsOnDeviceConversion */,
+				CBAC58D82BD12AC500F34AAE /* FirebaseFirestore */,
+				CBAC58DA2BD12AFB00F34AAE /* FirebaseFirestore */,
+				CBAC58DC2BD12AFB00F34AAE /* FirebaseFirestoreCombine-Community */,
+				CBAC58DE2BD12AFB00F34AAE /* FirebaseFirestoreSwift */,
+			);
+			productName = "NLPubMed Assistant";
+			productReference = CBCCCF9F2BD016FF008BE3FA /* NLPubMed Assistant.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CBCCCFB72BD01700008BE3FA /* NLPubMed AssistantTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBCCCFCF2BD01701008BE3FA /* Build configuration list for PBXNativeTarget "NLPubMed AssistantTests" */;
+			buildPhases = (
+				CBCCCFB42BD01700008BE3FA /* Sources */,
+				CBCCCFB52BD01700008BE3FA /* Frameworks */,
+				CBCCCFB62BD01700008BE3FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBCCCFBA2BD01700008BE3FA /* PBXTargetDependency */,
+			);
+			name = "NLPubMed AssistantTests";
+			productName = "NLPubMed AssistantTests";
+			productReference = CBCCCFB82BD01700008BE3FA /* NLPubMed AssistantTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CBCCCFC12BD01701008BE3FA /* NLPubMed AssistantUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBCCCFD22BD01701008BE3FA /* Build configuration list for PBXNativeTarget "NLPubMed AssistantUITests" */;
+			buildPhases = (
+				CBCCCFBE2BD01701008BE3FA /* Sources */,
+				CBCCCFBF2BD01701008BE3FA /* Frameworks */,
+				CBCCCFC02BD01701008BE3FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBCCCFC42BD01701008BE3FA /* PBXTargetDependency */,
+			);
+			name = "NLPubMed AssistantUITests";
+			productName = "NLPubMed AssistantUITests";
+			productReference = CBCCCFC22BD01701008BE3FA /* NLPubMed AssistantUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CBCCCF972BD016FF008BE3FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					CBCCCF9E2BD016FF008BE3FA = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					CBCCCFB72BD01700008BE3FA = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = CBCCCF9E2BD016FF008BE3FA;
+					};
+					CBCCCFC12BD01701008BE3FA = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = CBCCCF9E2BD016FF008BE3FA;
+					};
+				};
+			};
+			buildConfigurationList = CBCCCF9A2BD016FF008BE3FA /* Build configuration list for PBXProject "NLPubMed Assistant" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CBCCCF962BD016FF008BE3FA;
+			packageReferences = (
+				CBCCCFD92BD01C8F008BE3FA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = CBCCCFA02BD016FF008BE3FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CBCCCF9E2BD016FF008BE3FA /* NLPubMed Assistant */,
+				CBCCCFB72BD01700008BE3FA /* NLPubMed AssistantTests */,
+				CBCCCFC12BD01701008BE3FA /* NLPubMed AssistantUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CBCCCF9D2BD016FF008BE3FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBAC58D72BD1295500F34AAE /* Main.storyboard in Resources */,
+				CBF7B0C62BE9752E00F03C7C /* Assets.xcassets in Resources */,
+				CBAC58D62BD1292B00F34AAE /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBCCCFB62BD01700008BE3FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBF7B0C72BE9752F00F03C7C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBCCCFC02BD01701008BE3FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBF7B0C82BE9753000F03C7C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CBCCCF9B2BD016FF008BE3FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBBFC37B2BD031A800405DAE /* RegisterController.swift in Sources */,
+				CBBFC37D2BD0506700405DAE /* LoginController.swift in Sources */,
+				CBAC58E62BD15F0D00F34AAE /* ArticlesManager.swift in Sources */,
+				CBAC58E12BD133DA00F34AAE /* Utils.swift in Sources */,
+				CBCCCFA72BD016FF008BE3FA /* MainController.swift in Sources */,
+				CBAC58CC2BD1212C00F34AAE /* SearchController.swift in Sources */,
+				CBCCCFA32BD016FF008BE3FA /* AppDelegate.swift in Sources */,
+				CBAC58CA2BD11FD900F34AAE /* Constants.swift in Sources */,
+				CBAC58E82BD1601300F34AAE /* ArticlesModel.swift in Sources */,
+				CBCCCFA52BD016FF008BE3FA /* SceneDelegate.swift in Sources */,
+				CBAC58EA2BD160B300F34AAE /* ArticlesData.swift in Sources */,
+				CBAC58EC2BD19CF200F34AAE /* WebViewController.swift in Sources */,
+				CBF7B0CA2BE980AA00F03C7C /* ArticleTableViewCell.swift in Sources */,
+				CBCCCFAD2BD016FF008BE3FA /* NLPubMed_Assistant.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBCCCFB42BD01700008BE3FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBCCCFBD2BD01700008BE3FA /* NLPubMed_AssistantTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBCCCFBE2BD01701008BE3FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBCCCFC92BD01701008BE3FA /* NLPubMed_AssistantUITestsLaunchTests.swift in Sources */,
+				CBCCCFC72BD01701008BE3FA /* NLPubMed_AssistantUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CBCCCFBA2BD01700008BE3FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBCCCF9E2BD016FF008BE3FA /* NLPubMed Assistant */;
+			targetProxy = CBCCCFB92BD01700008BE3FA /* PBXContainerItemProxy */;
+		};
+		CBCCCFC42BD01701008BE3FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBCCCF9E2BD016FF008BE3FA /* NLPubMed Assistant */;
+			targetProxy = CBCCCFC32BD01701008BE3FA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CBCCCFA82BD016FF008BE3FA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBCCCFA92BD016FF008BE3FA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CBCCCFB02BD01700008BE3FA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBCCCFB12BD01700008BE3FA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CBCCCFCA2BD01701008BE3FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CBCCCFCB2BD01701008BE3FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CBCCCFCD2BD01701008BE3FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "NLPubMed Assistant/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.octa.NLPubMed-Assistant";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CBCCCFCE2BD01701008BE3FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "NLPubMed Assistant/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.octa.NLPubMed-Assistant";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CBCCCFD02BD01701008BE3FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.octa.NLPubMed-AssistantTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NLPubMed Assistant.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NLPubMed Assistant";
+			};
+			name = Debug;
+		};
+		CBCCCFD12BD01701008BE3FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.octa.NLPubMed-AssistantTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NLPubMed Assistant.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NLPubMed Assistant";
+			};
+			name = Release;
+		};
+		CBCCCFD32BD01701008BE3FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.octa.NLPubMed-AssistantUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "NLPubMed Assistant";
+			};
+			name = Debug;
+		};
+		CBCCCFD42BD01701008BE3FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.octa.NLPubMed-AssistantUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "NLPubMed Assistant";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CBCCCF9A2BD016FF008BE3FA /* Build configuration list for PBXProject "NLPubMed Assistant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBCCCFCA2BD01701008BE3FA /* Debug */,
+				CBCCCFCB2BD01701008BE3FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBCCCFCC2BD01701008BE3FA /* Build configuration list for PBXNativeTarget "NLPubMed Assistant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBCCCFCD2BD01701008BE3FA /* Debug */,
+				CBCCCFCE2BD01701008BE3FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBCCCFCF2BD01701008BE3FA /* Build configuration list for PBXNativeTarget "NLPubMed AssistantTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBCCCFD02BD01701008BE3FA /* Debug */,
+				CBCCCFD12BD01701008BE3FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBCCCFD22BD01701008BE3FA /* Build configuration list for PBXNativeTarget "NLPubMed AssistantUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBCCCFD32BD01701008BE3FA /* Debug */,
+				CBCCCFD42BD01701008BE3FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CBCCCFD92BD01C8F008BE3FA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.24.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CBAC58CF2BD1270500F34AAE /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FirebaseAnalytics;
+		};
+		CBAC58D12BD1270500F34AAE /* FirebaseAnalyticsOnDeviceConversion */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FirebaseAnalyticsOnDeviceConversion;
+		};
+		CBAC58D82BD12AC500F34AAE /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FirebaseFirestore;
+		};
+		CBAC58DA2BD12AFB00F34AAE /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FirebaseFirestore;
+		};
+		CBAC58DC2BD12AFB00F34AAE /* FirebaseFirestoreCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = "FirebaseFirestoreCombine-Community";
+		};
+		CBAC58DE2BD12AFB00F34AAE /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FirebaseFirestoreSwift;
+		};
+		CBCCCFDA2BD01DC9008BE3FA /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FirebaseAnalytics;
+		};
+		CBCCCFDC2BD01DC9008BE3FA /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FirebaseAuth;
+		};
+		CBCCCFDE2BD01DC9008BE3FA /* FirebaseAuthCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = "FirebaseAuthCombine-Community";
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		CBCCCFAB2BD016FF008BE3FA /* NLPubMed_Assistant.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CBCCCFAC2BD016FF008BE3FA /* NLPubMed_Assistant.xcdatamodel */,
+			);
+			currentVersion = CBCCCFAC2BD016FF008BE3FA /* NLPubMed_Assistant.xcdatamodel */;
+			path = NLPubMed_Assistant.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CBCCCF972BD016FF008BE3FA /* Project object */;
+}
