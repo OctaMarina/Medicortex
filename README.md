@@ -47,6 +47,29 @@ The iOS app features:
 
 The Django-based API
 
+## 📁 Project Structure
+
+```
+Medicortex/
+├── NLPubMed Assistant/                # iOS native client (Swift)
+│   ├── Controllers/                   # View controllers (Login, Register, Search, etc.)
+│   ├── Model/                         # Swift models and article data logic
+│   ├── Views/                         # UI components and storyboard files
+│   ├── Assets.xcassets/              # App icons and image assets
+│   └── Info.plist                    # iOS app configuration
+│
+├── AIMeshDjangoServer/               # Django backend server
+│   ├── ai_processing/                # BERT model loading and prediction logic
+│   ├── ai_mesh_django_server/       # Django app (views, urls, serializers)
+│   ├── templates/                    # HTML templates (if any)
+│   └── manage.py                     # Django project entry point
+│
+├── NLPubMed Assistant.xcodeproj      # Xcode project file
+├── Constants.swift                   # Shared Swift constants
+├── README.md                         # Project documentation
+└── .gitignore                        # Files and folders ignored by Git
+```
+
 ## 👨‍🎓 Academic Context
 
 This project was developed as part of a Bachelor's thesis in Artificial Intelligence (2024). It combines techniques from deep learning, biomedical informatics, and mobile development into a unified research tool.
