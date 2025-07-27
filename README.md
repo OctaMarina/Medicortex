@@ -17,7 +17,7 @@ and receive structured, targeted PubMed results enriched with semantic metadata.
 ## 🚀 Features
 
 - **AI-Powered NLP**: Fine-tuned BioBERT model trained on a manually annotated dataset of biomedical questions and article metadata.
-- **Custom Dataset**: Includes over 1,500 labeled examples with MeSH terms, authorship, and time tags for training and evaluation.
+- **Custom Dataset**: Includes over one million labeled examples with MeSH terms, authorship, and time tags for training and evaluation.
 - **Smart PubMed Queries**: Automatically constructs advanced queries based on predicted metadata to improve precision and recall.
 - **Mobile-First Experience**: A modern, intuitive native iOS application built in Swift with Combine, allowing real-time querying and result visualization.
 - **Scalable Backend**: Django + TensorFlow API that handles inference and article search logic via PubMed's E-Utilities.
